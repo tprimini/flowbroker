@@ -34,5 +34,10 @@ module.exports = {
     'tenancy': {
         subject: process.env.TENANCY_SUBJECT || "dojot.tenancy",
         manager: process.env.TENANCY_MANAGER || "http://auth:5000"
+    },
+
+    'redis': {
+        host: process.env.FLOWBROKER_REDIS_HOST || 'flowbroker-redis',
+        lockTimeout: process.env.FLOWBROKER_REDIS_LOCK_TIMEOUT || 2000
     }
 }
